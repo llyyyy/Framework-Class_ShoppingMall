@@ -18,6 +18,6 @@ public class ItemController {
 	public void list() {
 		System.out.println("***** : controller");
 //		return itemService.list();
-		// hello project guthub app
+		// rename
 	}
 }
