@@ -7,10 +7,8 @@ import org.springframework.stereotype.Repository;
 import kr.ac.jejuuniv.model.Item;
 
 @Repository
-public class ItemRepository {
+public interface ItemRepository {
 	
-	public List<Item> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	List<Item> findAll();
+	
 }

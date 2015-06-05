@@ -31,18 +31,25 @@
 	<br/><br/>
 	<div id="content">
 		<table class="table table-hover" id="list_item">
-			<tr>
-				<td>상품이미지</td>
-				<td>상품명</td>
-				<td>가격</td>
-				<td>판매자</td>
-			</tr>
-			<tr>
-				<td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded"  /></td>
-				<td class="itemName">품질 좋은 상품 A 20% 할인판매</td>
-				<td class="price">15,000</td>
-				<td class="seller">(주)제주대학교</td>
-			<tr>
+			<caption> 쇼핑몰 </caption>
+			<thread>
+				<tr>
+					<th> 상품이미지 </th>
+					<th> 상품명 </th>
+					<th> 가격 </th>
+					<th> 판매자 </th>
+				</tr>
+			</thread>
+			<tbody>
+				<c:forEach items="${itemList}" var="item">
+				<tr>
+					<td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded"  /></td>
+					<td><a href="info?id=${item.id}">${item.title}</a></td>
+					<td>${item.price}</td>
+					<td>${item.provider}</td>
+				</tr>
+				</c:forEach>
+			</tbody>
 		</table>
 		<button type="button" class="btn btn-default" id="page">1</button>
 	</div>
