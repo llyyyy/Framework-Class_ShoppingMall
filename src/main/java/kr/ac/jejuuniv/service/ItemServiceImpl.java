@@ -14,6 +14,7 @@ public class ItemServiceImpl implements ItemService {
 	@Autowired
 	private ItemRepository itemRepository;
 	
+	@Override
 	public List<Item> list() {
 		return itemRepository.findAll();
 	}
