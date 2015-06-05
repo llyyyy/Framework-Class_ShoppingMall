@@ -3,10 +3,10 @@ package kr.ac.jejuuniv.model;
 public class Item {
 	
 	private Integer id;
-	private String title;
+	private String itemName;
 	private Integer price;
 	private String provider;
-	
+	// private User provider; 일 경우에는??
 
 	public Integer getId() {
 		return id;
@@ -15,10 +15,10 @@ public class Item {
 		this.id = id;
 	}
 	public String getTitle() {
-		return title;
+		return itemName;
 	}
 	public void setTitle(String title) {
-		this.title = title;
+		this.itemName = title;
 	}
 	public Integer getPrice() {
 		return price;

@@ -43,7 +43,7 @@
 			<tbody>
 				<c:forEach items="${itemList}" var="item">
 				<tr>
-					<td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded"  /></td>
+					<!--<td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded"  /></td>-->
 					<td><a href="info?id=${item.id}">${item.title}</a></td>
 					<td>${item.price}</td>
 					<td>${item.provider}</td>

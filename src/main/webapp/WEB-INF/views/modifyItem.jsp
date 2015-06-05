@@ -54,7 +54,7 @@
 		<div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">상품상세설명</label>
 			<div class="col-sm-10">
-				<textarea class="form-control" rows="10"></textarea>	
+				<textarea class="form-control" rows="10" name="itemExplain"></textarea>	
 			</div>
 		</div>
 		<div class="form-group">

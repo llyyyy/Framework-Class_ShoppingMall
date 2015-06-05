@@ -24,7 +24,7 @@
 		<div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">ID</label>
 			<div class="col-sm-10">
-			  <input type="email" class="form-control" id="inputEmail3" name="userId" placeholder="아이디">
+			  <input type="email" class="form-control" id="inputEmail3" name="id" placeholder="아이디">
 			</div>
 		</div>
 		<div class="form-group">

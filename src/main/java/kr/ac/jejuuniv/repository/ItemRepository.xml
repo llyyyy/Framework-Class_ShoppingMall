@@ -7,6 +7,9 @@
 			id, title, price, provider
 		from item
 	</select>
+	<insert id="insert" parameterType="Item">
+		insert into item(title, price, provide) values (#{title}, #{price}, #{provider});
+	</insert>
 <!--<insert id="insert" parameterType="User">
 		insert into userinfo(id,name,password) values(#{id}, #{name}, #{password})
 	</insert>

@@ -38,7 +38,7 @@
 				<td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded" /></td>
 				<td class="itemName">품질 좋은 상품 A 20% 할인판매</td>
 				<td class="price">15,000</td>
-				<td class="seller">(주)제주대학교</td>
+				<td class="provider">(주)제주대학교</td>
 			<tr>
 		</table>
 		<button type="button" class="btn btn-default" id="page">1</button>

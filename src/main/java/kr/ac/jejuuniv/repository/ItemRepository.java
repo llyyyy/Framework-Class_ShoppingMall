@@ -10,5 +10,7 @@ import kr.ac.jejuuniv.model.Item;
 public interface ItemRepository {
 	
 	List<Item> findAll();
+
+	void insert(Item item);
 	
 }
