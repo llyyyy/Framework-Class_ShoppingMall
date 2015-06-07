@@ -6,9 +6,11 @@ import kr.ac.jejuuniv.model.Item;
 
 public interface ItemService {
 
-	 List<Item> list();
+	List<Item> list();
 
 	void save(Item item);
+
+	void modify(Item item);
 
 
 }

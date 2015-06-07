@@ -23,9 +23,9 @@
 		<a class="btn btn-default" href="#" role="button">수정</a>
 	</div>
 	<div>
-		<input class="text" value="상품명" />
+		<input class="text" value="itemName" />
 		<img src="" alt="상품이미지" class="img-responsive img-rounded" />
-		<input class="text" value="가격" />
+		<input class="text" value="price" />
 		<input class="text" value="판매자" />
 		<input class="text" value="상품상세설명" />
 	</div>

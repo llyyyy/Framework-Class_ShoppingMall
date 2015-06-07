@@ -5,19 +5,18 @@ import kr.ac.jejuuniv.service.ItemService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/addItem")
-public class ItemSave {
+@RequestMapping("/modifyItem")
+public class itemModify {
 	
 	@Autowired
 	private ItemService itemService;
 	
 	@RequestMapping
-	public String save(Item item) {
-		itemService.save(item);
+	public String modify(Item item) {
+		itemService.modify(item);
 		return "redirect:shoppingmallHome";
 	}
 

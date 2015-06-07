@@ -12,5 +12,7 @@ public interface ItemRepository {
 	List<Item> findAll();
 
 	void insert(Item item);
+
+	void update(Item item);
 	
 }
