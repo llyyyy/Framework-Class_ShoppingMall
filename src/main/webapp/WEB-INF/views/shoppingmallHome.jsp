@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!doctype html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lxmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" >
@@ -13,20 +14,22 @@
 		td{border: solid 1px; height: 50px; padding: 10px;}
 		
 	</style>
-	<!-- 합쳐지고 최소화된 최신 CSS -->
+	
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<!-- 부가적인 테마 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<script src="js/bootstrap.js"></script>
-	<script src="http://code.jquery.com/jquery.js"></script>	
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+
+	<link rel="stylesheet" type="text/css" href="<c:url value='/resources/css/bootstrap.css'/>" />	
 </head>
 <body>
 	<div id="header">
-		<a class="btn btn-default" href="./join.html" role="button">회원가입</a>
-		<a class="btn btn-default" href="./login.html" role="button">로그인</a>
+		<a class="btn btn-default" href="./join" role="button">회원가입</a>
+		<a class="btn btn-default" href="./login" role="button">로그인</a>
 	</div>
 	<br/><br/>
 	<div id="content">
@@ -34,14 +37,14 @@
 			<caption> 쇼핑몰 </caption>
 			<thread>
 				<tr>
-					<th> 상품이미지 </th>
+					<!-- <th> 상품이미지 </th> -->
 					<th> 상품명 </th>
 					<th> 가격 </th>
 					<th> 판매자 </th>
 				</tr>
 			</thread>
-			<tbody>
-				<c:forEach items="${itemList}" var="item">
+			<tbody id="itemList">
+				<c:forEach items="${itemList}" var="item" varStatus="status">
 				<tr>
 					<!--<td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded"  /></td>-->
 					<td><a href="info?id=${item.id}">${item.itemName}</a></td>
@@ -55,5 +58,7 @@
 	</div>
 
 
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="<c:url value='/resources/js/bootstrap.min.js'/>"></script>
 </body>
 </html>

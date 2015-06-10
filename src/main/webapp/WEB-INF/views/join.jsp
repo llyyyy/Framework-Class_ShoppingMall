@@ -21,7 +21,7 @@
 <body>
 
 	<h1>회원 가입</h1>
-	<form class="form-join form-horizontal" action="./home.html" method="get" name="join" >
+	<form class="form-join form-horizontal" action="./shoppingmallHome" method="get" name="join" >
 		<div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">ID</label>
 			<div class="col-sm-10">

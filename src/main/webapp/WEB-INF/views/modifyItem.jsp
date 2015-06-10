@@ -31,7 +31,7 @@
 	<h1>상품 수정</h1>
 	<p>(주)제주대학교 님의 상품</p>
 
-	<form class="form-addItem form-horizontal" action="#" method="get" name="modifyItem" >
+	<form class="form-addItem form-horizontal" action="./shoppingmallHome" method="get" name="modifyItem" >
 		<div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">상품 이미지</label>
 			<div class="col-sm-10">

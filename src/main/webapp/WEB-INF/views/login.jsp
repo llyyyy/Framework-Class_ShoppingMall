@@ -20,7 +20,7 @@
 </head>
 <body>
 	<h1>로그인</h1>
-	<form class="form-login form-horizontal" action="./home_user.html" method="get" name="login" >
+	<form class="form-login form-horizontal" action="./home_user" method="get" name="login" >
 		<div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">ID</label>
 			<div class="col-sm-10">

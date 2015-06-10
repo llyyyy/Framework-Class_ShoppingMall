@@ -17,8 +17,8 @@ public class Item {
 	public String getTitle() {
 		return itemName;
 	}
-	public void setTitle(String title) {
-		this.itemName = title;
+	public void setTitle(String itemName) {
+		this.itemName = itemName;
 	}
 	public Integer getPrice() {
 		return price;

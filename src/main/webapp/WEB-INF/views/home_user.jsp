@@ -22,8 +22,8 @@
 <body>
 	<div id="header">
 		<p>허윤호님 안녕하세요</p>
-		<a class="btn btn-default" href="./addItem.html" role="button">상품등록</a>
-		<a class="btn btn-default" href="./home.html" role="button">로그아웃</a>
+		<a class="btn btn-default" href="./addItem" role="button">상품등록</a>
+		<a class="btn btn-default" href="./shoppingmallHome" role="button">로그아웃</a>
 	</div>
 	<br/><br/>
 	<div id="content">
@@ -35,7 +35,7 @@
 				<td>판매자</td>
 			</tr>
 			<tr>
-				<td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded" /></td>
+				<!-- <td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded" /></td> -->
 				<td class="itemName">품질 좋은 상품 A 20% 할인판매</td>
 				<td class="price">15,000</td>
 				<td class="provider">(주)제주대학교</td>
