@@ -4,7 +4,7 @@
 <mapper namespace="kr.ac.jejuuniv.repository.ItemRepository">
 	<select id="findAll" resultType="Item" >
 		select 
-			itemName, price, provider
+			id, itemName, price, provider
 		from item
 	</select>
 	<insert id="insert" parameterType="Item">

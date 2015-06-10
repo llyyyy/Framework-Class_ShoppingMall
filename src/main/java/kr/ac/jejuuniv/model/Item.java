@@ -14,10 +14,10 @@ public class Item {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getTitle() {
+	public String getItemName() {
 		return itemName;
 	}
-	public void setTitle(String itemName) {
+	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 	public Integer getPrice() {

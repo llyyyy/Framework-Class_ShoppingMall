@@ -21,8 +21,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.daumtrack.jejuuniv" />
-	
+	<context:component-scan base-package="kr.ac.jejuuniv" />
 	
 	
 </beans:beans>

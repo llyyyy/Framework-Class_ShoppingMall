@@ -44,7 +44,7 @@
 				</tr>
 			</thread>
 			<tbody>
-				<c:forEach items="${itemList}" var="item" varStatus="status">
+				<c:forEach items="${itemList}" var="item" >
 				<tr>
 					<!--<td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded"  /></td>-->
 					<td>${item.itemName}</a></td>
