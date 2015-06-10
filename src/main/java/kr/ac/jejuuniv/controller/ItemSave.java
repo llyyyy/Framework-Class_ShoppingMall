@@ -16,7 +16,7 @@ public class ItemSave {
 	private ItemService itemService;
 	
 	@RequestMapping
-	public String save(Item item) {
+	public String save(@ModelAttribute Item item) {
 		itemService.save(item);
 		return "redirect:shoppingmallHome";
 	}

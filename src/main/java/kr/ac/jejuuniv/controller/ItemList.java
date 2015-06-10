@@ -13,13 +13,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping
+@RequestMapping("/shoppingmallHome")
 public class ItemList {
 
 	@Autowired
 	private ItemService itemService;
 	
-	@RequestMapping("/shoppingmallHome")
+	@RequestMapping
 	public List<Item> list(Model model, HttpSession session) {
 		
 		List<Item> itemList = itemService.list();

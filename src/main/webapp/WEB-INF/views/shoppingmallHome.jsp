@@ -28,8 +28,8 @@
 </head>
 <body>
 	<div id="header">
-		<a class="btn btn-default" href="./join" role="button">회원가입</a>
-		<a class="btn btn-default" href="./login" role="button">로그인</a>
+		<a class="btn btn-default" href="join" role="button">회원가입</a>
+		<a class="btn btn-default" href="login" role="button">로그인</a>
 	</div>
 	<br/><br/>
 	<div id="content">

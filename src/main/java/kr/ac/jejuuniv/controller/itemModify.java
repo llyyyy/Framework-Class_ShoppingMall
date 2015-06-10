@@ -5,6 +5,7 @@ import kr.ac.jejuuniv.service.ItemService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -15,7 +16,7 @@ public class itemModify {
 	private ItemService itemService;
 	
 	@RequestMapping
-	public String modify(Item item) {
+	public String modify(@ModelAttribute Item item) {
 		itemService.modify(item);
 		return "redirect:shoppingmallHome";
 	}

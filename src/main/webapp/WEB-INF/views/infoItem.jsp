@@ -19,15 +19,15 @@
 <body>
 	<h1>상품 정보</h1>
 	<div>
-		<a class="btn btn-default" href="#" role="button">목록</a>
-		<a class="btn btn-default" href="#" role="button">수정</a>
+		<a class="btn btn-default" href="shoppingmallHome" role="button">목록</a>
+		<a class="btn btn-default" href="modifyItem" role="button">수정</a>
 	</div>
 	<div>
-		<input class="text" value="itemName" />
-		<img src="" alt="상품이미지" class="img-responsive img-rounded" />
-		<input class="text" value="price" />
-		<input class="text" value="판매자" />
-		<input class="text" value="상품상세설명" />
+		<input class="text" name="itemName" value="${item.itemName}" readonly/>
+		<img src="" alt="상품이미지" class="img-responsive img-rounded" readonly/>
+		<input class="text" name="price" value="${item.price}" readonly/>
+		<input class="text" name="provider" value="${item.provider}" readonly/>
+		<input class="text" name="itemExplain" value="${item.itemExplain}" readonly/>
 	</div>
 	<a class="btn btn-default" href="./basket.html" role="button">구매</a>
 </body>

@@ -31,35 +31,36 @@
 	<h1>상품 수정</h1>
 	<p>(주)제주대학교 님의 상품</p>
 
-	<form class="form-addItem form-horizontal" action="./shoppingmallHome" method="get" name="modifyItem" >
-		<div class="form-group">
+	<form class="form-addItem form-horizontal" action="itemModify" method="post" name="modifyItem" >
+<!-- 		<div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">상품 이미지</label>
 			<div class="col-sm-10">
 		 		<input type="file" id="exampleInputFile" name="찾아보기">
 			</div>
-		</div>
+		</div> -->
 		<img src="..." class="img-responsive" alt="기존 상품이미지 미리보기">
 		<div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">상품명</label>
 			<div class="col-sm-10">
-			  <input type="password" class="form-control" id="inputEmail3" name="itemName"  placeholder="품질 좋은 상품 A 20% 할인 판매">
+			  <input type="text" class="form-control" id="inputEmail3" name="itemName"  value="${item.itemName}">
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">가격</label>
 			<div class="col-sm-10">
-			  <input type="text" class="form-control" id="inputEmail3" name="price"  placeholder="15000">
+			  <input type="text" class="form-control" id="inputEmail3" name="price"  value="${item.price}">
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">상품상세설명</label>
 			<div class="col-sm-10">
-				<textarea class="form-control" rows="10" name="itemExplain"></textarea>	
+				<textarea class="form-control" rows="10" name="itemExplain"  value="${item.itemExplain}"></textarea>	
 			</div>
 		</div>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-				<button type="submit" class="btn btn-default">수정</button>
+				<input type="submit" class="btn btn-default" value="수정"/>
+				<a href="itemDelete.jeju?id=${item.id}" ><iput type="button" value="삭제" /></a>
 				<a href="javascript:history.back();" class="btn btn-default">취소</a>
 			</div>
 		</div>
