@@ -43,11 +43,11 @@
 					<th> 판매자 </th>
 				</tr>
 			</thread>
-			<tbody id="itemList">
+			<tbody>
 				<c:forEach items="${itemList}" var="item" varStatus="status">
 				<tr>
 					<!--<td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded"  /></td>-->
-					<td><a href="info?id=${item.id}">${item.itemName}</a></td>
+					<td>${item.itemName}</a></td>
 					<td>${item.price}</td>
 					<td>${item.provider}</td>
 				</tr>

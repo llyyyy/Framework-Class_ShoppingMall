@@ -19,7 +19,7 @@ public class ItemList {
 	@Autowired
 	private ItemService itemService;
 	
-	@RequestMapping(value="/shoppingmallHome")
+	@RequestMapping("/shoppingmallHome")
 	public List<Item> list(Model model, HttpSession session) {
 		
 		List<Item> itemList = itemService.list();
@@ -27,6 +27,7 @@ public class ItemList {
 		model.addAttribute("itemList", itemList);
 		
 		System.out.println("***** : controller");
+		
 		return itemList;
 	}
 }
