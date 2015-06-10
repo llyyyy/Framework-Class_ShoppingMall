@@ -14,5 +14,7 @@ public interface ItemService {
 
 	void modify(Item item);
 
+	void delete(int id);
+
 
 }

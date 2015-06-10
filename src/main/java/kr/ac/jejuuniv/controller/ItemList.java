@@ -26,7 +26,7 @@ public class ItemList {
 		
 		model.addAttribute("itemList", itemList);
 		
-		System.out.println("***** : controller");
+		System.out.println("ItemList : controller");
 		
 		return itemList;
 	}

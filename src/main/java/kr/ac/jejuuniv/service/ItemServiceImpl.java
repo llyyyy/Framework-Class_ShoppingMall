@@ -28,4 +28,9 @@ public class ItemServiceImpl implements ItemService {
 	public void modify(Item item) {
 		itemRepository.update(item);
 	}
+	
+	@Override
+	public void delete(int id) {
+		itemRepository.delte(id);
+	}
 }

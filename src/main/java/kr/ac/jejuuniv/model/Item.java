@@ -6,6 +6,7 @@ public class Item {
 	private String itemName;
 	private Integer price;
 	private String provider;
+	private String itemExplain;
 	// private User provider; 일 경우에는??
 
 	public Integer getId() {
@@ -32,5 +33,10 @@ public class Item {
 	public void setProvider(String provider) {
 		this.provider = provider;
 	}
-
+	public String getItemExplain() {
+		return itemExplain;
+	}
+	public void setItemExplain(String itemExplain) {
+		this.itemExplain = itemExplain;
+	}
 }

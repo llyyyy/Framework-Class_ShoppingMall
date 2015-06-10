@@ -13,6 +13,9 @@
 	<update id="update" parameterType="Item"> 
 		update item set itemName=#{itemName}, price=#{price} where id = #{id}
 	</update>
+	<delete id="delete" parameterType="Item">
+		delete from item where id = #{id}
+	</delete>
 <!--<insert id="insert" parameterType="User">
 		insert into userinfo(id,name,password) values(#{id}, #{name}, #{password})
 	</insert>
