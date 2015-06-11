@@ -20,7 +20,7 @@
 	<h1>상품 정보</h1>
 	<div>
 		<a class="btn btn-default" href="shoppingmallHome" role="button">목록</a>
-		<a class="btn btn-default" href="modifyItem" role="button">수정</a>
+		<a class="btn btn-default" href="modifyItem?id=${item.id}" role="button">수정</a>
 	</div>
 	<div>
 		<input class="text" name="itemName" value="${item.itemName}" readonly/>
@@ -29,6 +29,6 @@
 		<input class="text" name="provider" value="${item.provider}" readonly/>
 		<input class="text" name="itemExplain" value="${item.itemExplain}" readonly/>
 	</div>
-	<a class="btn btn-default" href="./basket.html" role="button">구매</a>
+	<a class="btn btn-default" href="basket.jeju" role="button">구매</a>
 </body>
 </html>

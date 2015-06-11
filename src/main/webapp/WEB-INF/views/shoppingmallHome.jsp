@@ -28,8 +28,9 @@
 </head>
 <body>
 	<div id="header">
-		<a class="btn btn-default" href="join" role="button">회원가입</a>
-		<a class="btn btn-default" href="login" role="button">로그인</a>
+		<a class="btn btn-default" href="join.jeju" role="button">회원가입</a>
+		<a class="btn btn-default" href="login.jeju" role="button">로그인</a>
+		<a class="btn btn-default" href="addItem.jeju" role="button">상품등록</a>
 	</div>
 	<br/><br/>
 	<div id="content">
@@ -47,7 +48,7 @@
 				<c:forEach items="${itemList}" var="item" >
 				<tr>
 					<!--<td class="itemImg"><img src="" alt="상품이미지" class="img-responsive img-rounded"  /></td>-->
-					<td>${item.itemName}</a></td>
+					<td><a href="infoItem.jeju?id=${item.id}">${item.itemName}</a></td>
 					<td>${item.price}</td>
 					<td>${item.provider}</td>
 				</tr>
@@ -57,8 +58,5 @@
 		<button type="button" class="btn btn-default" id="page">1</button>
 	</div>
 
-
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="<c:url value='/resources/js/bootstrap.min.js'/>"></script>
 </body>
 </html>

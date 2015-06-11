@@ -21,7 +21,7 @@
 	<h1>상품 등록</h1>
 	<p>(주)제주대학교 님의 상품</p>
 
-	<form class="form-addItem form-horizontal" action="save" method="post" name="addItem" >
+	<form class="form-addItem form-horizontal" action="shoppingmallHome" method="post" name="addItem" >
 		<fieldset>
 			<!-- 		<div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label">상품 이미지</label>

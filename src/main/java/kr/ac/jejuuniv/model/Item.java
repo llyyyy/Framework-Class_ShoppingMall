@@ -2,11 +2,11 @@ package kr.ac.jejuuniv.model;
 
 public class Item {
 	
-	private Integer id;
-	private String itemName;
-	private Integer price;
-	private String provider;
-	private String itemExplain;
+	private Integer id;  // 상품 구분  key
+	private String itemName;  // 상품명 
+	private Integer price;  // 가격 
+	private String provider;  // 판매자 
+	private String itemExplain;  // 상품상세설명 
 	// private User provider; 일 경우에는??
 
 	public Integer getId() {

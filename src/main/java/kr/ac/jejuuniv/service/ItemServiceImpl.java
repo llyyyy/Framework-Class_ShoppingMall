@@ -25,8 +25,13 @@ public class ItemServiceImpl implements ItemService {
 	}
 	
 	@Override
-	public void modify(Item item) {
+	public void modifyProcess(Item item) {
 		itemRepository.update(item);
+	}
+	
+	@Override
+	public Item modify(int id) {
+		return itemRepository.findByItem(id);
 	}
 	
 	@Override

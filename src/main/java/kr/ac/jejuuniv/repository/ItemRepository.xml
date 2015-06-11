@@ -3,19 +3,27 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.ac.jejuuniv.repository.ItemRepository">
 	<select id="findAll" resultType="Item" >
-		select 
-			id, itemName, price, provider
+		select *
 		from item
 	</select>
 	<insert id="insert" parameterType="Item">
-		insert into item(itemName, price, provider) values (#{itemName}, #{price}, #{provider})
+		insert into item(itemName, price, provider) 
+		values (#{itemName}, #{price}, #{provider})
 	</insert>
 	<update id="update" parameterType="Item"> 
-		update item set itemName=#{itemName}, price=#{price} where id = #{id}
+		update item set
+		itemName=#{itemName}, price=#{price}, itemExplain=#{itemExplain}
+		where id = #{id}
 	</update>
 	<delete id="delete" parameterType="Item">
-		delete from item where id = #{id}
+		delete from item
+		where id = #{id}
 	</delete>
+	<select id="findByItem" resultType="Item" >
+		select itemName, price, itemExplain 
+		from item
+		where id = #{id}
+	</select>
 <!--<insert id="insert" parameterType="User">
 		insert into userinfo(id,name,password) values(#{id}, #{name}, #{password})
 	</insert>
