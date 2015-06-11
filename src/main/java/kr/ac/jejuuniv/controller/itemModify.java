@@ -19,17 +19,17 @@ public class itemModify {
 	@Autowired
 	private ItemService itemService;
 	
-	@RequestMapping("/modifyProcess")
+	@RequestMapping(value="/modifyProcess")
 	public String modifyProcess(@ModelAttribute Item item) {
 		itemService.modifyProcess(item);
+		System.out.println("ModifyProcess : controller");
 		return "redirect:shoppingmallHome";
 	}
 	
-	@RequestMapping("/modifyItem")
+	@RequestMapping(value="/modifyItem")
 	public Item modify(@RequestParam("id") int id) {
-//		if (id == null)
-//			return null ;
-		return itemService.modify(id);
+		System.out.println("Modify : controller");
+		return itemService.getItem(id);
 		
 	}
 

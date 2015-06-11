@@ -23,8 +23,6 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="http://code.jquery.com/jquery.js"></script>
 	
-
-	<link rel="stylesheet" type="text/css" href="<c:url value='/resources/css/bootstrap.css'/>" />	
 </head>
 <body>
 	<div id="header">

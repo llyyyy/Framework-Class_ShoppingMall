@@ -31,7 +31,7 @@
 	<h1>상품 수정</h1>
 	<p>(주)제주대학교 님의 상품</p>
 
-	<form class="form-addItem form-horizontal" action="modifiyProcess" method="post" name="modifyItem" >
+	<form class="form-addItem form-horizontal" action="modifiyProcess" method="post" >
 <!-- 		<div class="form-group">
 			<label for="inputEmail3" class="col-sm-2 control-label">상품 이미지</label>
 			<div class="col-sm-10">
@@ -57,6 +57,7 @@
 				<textarea class="form-control" rows="10" name="itemExplain"  value="${item.itemExplain}"></textarea>	
 			</div>
 		</div>
+		<input type="hidden" name="id" value="${item.id}" />
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
 				<input type="submit" class="btn btn-default" value="수정"/>

@@ -7,12 +7,11 @@
 		from item
 	</select>
 	<insert id="insert" parameterType="Item">
-		insert into item(itemName, price, provider) 
-		values (#{itemName}, #{price}, #{provider})
+		insert into item(itemName, price, provider, itemExplain) 
+		values (#{itemName}, #{price}, #{provider}, #{itemExplain})
 	</insert>
 	<update id="update" parameterType="Item"> 
-		update item set
-		itemName=#{itemName}, price=#{price}, itemExplain=#{itemExplain}
+		update item set itemName=#{itemName}, price=#{price}, itemExplain=#{itemExplain}
 		where id = #{id}
 	</update>
 	<delete id="delete" parameterType="Item">
@@ -20,7 +19,7 @@
 		where id = #{id}
 	</delete>
 	<select id="findByItem" resultType="Item" >
-		select itemName, price, itemExplain 
+		select *
 		from item
 		where id = #{id}
 	</select>

@@ -12,9 +12,9 @@ public interface ItemService {
 
 	void save(Item item);
 
-	void modifyProcess(Item item);
+	List<Item> modifyProcess(Item item);
 
-	Item modify(int id);
+	Item getItem(int id);
 
 	void delete(int id);
 

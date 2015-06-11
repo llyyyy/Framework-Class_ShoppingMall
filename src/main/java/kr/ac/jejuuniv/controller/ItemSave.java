@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/addItem")
+@RequestMapping("/save")
 public class ItemSave {
 	
 	@Autowired
@@ -18,6 +18,7 @@ public class ItemSave {
 	@RequestMapping
 	public String save(@ModelAttribute Item item) {
 		itemService.save(item);
+		System.out.println("ItemSave_ADD : controller");
 		return "redirect:shoppingmallHome";
 	}
 

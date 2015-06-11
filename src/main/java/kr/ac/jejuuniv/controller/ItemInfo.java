@@ -1,5 +1,6 @@
 package kr.ac.jejuuniv.controller;
 
+import kr.ac.jejuuniv.model.Item;
 import kr.ac.jejuuniv.service.ItemService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,16 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/deleteItem")
-public class ItemDelete {
+@RequestMapping("/intfoItem")
+public class ItemInfo {
 
 	@Autowired
 	private ItemService itemService;
 	
 	@RequestMapping
-	public String itemDelete(@RequestParam("id") int id) {
-		itemService.delete(id);
-		System.out.println("Delete : controller");
-		return "redirect:shoppingmallHome";
+	public Item getItem(@RequestParam("id") int id) {
+		System.out.println("ItemInfo : controller");
+		return itemService.getItem(id);
 	}
 }
