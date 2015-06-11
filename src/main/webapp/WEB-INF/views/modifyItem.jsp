@@ -69,7 +69,7 @@
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-10">
 					<input type="submit" class="btn btn-default" value="수정"/>
-					<a href="itemDelete.jeju?id=${item.id}" ><iput type="button" value="삭제" /></a>
+					<a href="deleteItem?id=${item.id}" class="btn btn-default">삭제</a>
 					<a href="javascript:history.back();" class="btn btn-default">취소</a>
 				</div>
 			</div>

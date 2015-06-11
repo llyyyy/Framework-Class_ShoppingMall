@@ -37,6 +37,6 @@ public class ItemServiceImpl implements ItemService {
 	
 	@Override
 	public void delete(int id) {
-		itemRepository.delte(id);
+		itemRepository.delete(id);
 	}
 }

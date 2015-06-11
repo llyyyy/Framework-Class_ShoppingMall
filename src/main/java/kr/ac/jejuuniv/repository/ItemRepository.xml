@@ -14,7 +14,7 @@
 		update item set itemName=#{itemName}, price=#{price}, provider=#{provider}, itemExplain=#{itemExplain}
 		where id = #{id}
 	</update>
-	<delete id="delete" parameterType="Item">
+	<delete id="delete" >
 		delete from item
 		where id = #{id}
 	</delete>

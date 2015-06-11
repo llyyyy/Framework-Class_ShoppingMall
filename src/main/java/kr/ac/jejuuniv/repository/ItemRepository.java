@@ -15,7 +15,7 @@ public interface ItemRepository {
 
 	void update(Item item);
 
-	void delte(int id);
+	void delete(int id);
 
 	Item findByItem(int id);
 	
