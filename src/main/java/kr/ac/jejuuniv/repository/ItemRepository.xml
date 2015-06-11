@@ -11,7 +11,7 @@
 		values (#{itemName}, #{price}, #{provider}, #{itemExplain})
 	</insert>
 	<update id="update" parameterType="Item"> 
-		update item set itemName=#{itemName}, price=#{price}, itemExplain=#{itemExplain}
+		update item set itemName=#{itemName}, price=#{price}, provider=#{provider}, itemExplain=#{itemExplain}
 		where id = #{id}
 	</update>
 	<delete id="delete" parameterType="Item">
@@ -20,8 +20,7 @@
 	</delete>
 	<select id="findByItem" resultType="Item" >
 		select *
-		from item
-		where id = #{id}
+		from item where id = #{id}
 	</select>
 <!--<insert id="insert" parameterType="User">
 		insert into userinfo(id,name,password) values(#{id}, #{name}, #{password})

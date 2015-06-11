@@ -19,18 +19,20 @@ public class itemModify {
 	@Autowired
 	private ItemService itemService;
 	
-	@RequestMapping(value="/modifyProcess")
+	@RequestMapping("/modifyProcess")
 	public String modifyProcess(@ModelAttribute Item item) {
-		itemService.modifyProcess(item);
 		System.out.println("ModifyProcess : controller");
+		
+		itemService.modifyProcess(item);
+		
 		return "redirect:shoppingmallHome";
 	}
 	
-	@RequestMapping(value="/modifyItem")
+	@RequestMapping("/modifyItem")
 	public Item modify(@RequestParam("id") int id) {
 		System.out.println("Modify : controller");
-		return itemService.getItem(id);
 		
+		return itemService.getItem(id);
 	}
 
 }

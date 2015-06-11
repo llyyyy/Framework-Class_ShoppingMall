@@ -16,8 +16,10 @@ public class ItemDelete {
 	
 	@RequestMapping
 	public String itemDelete(@RequestParam("id") int id) {
-		itemService.delete(id);
 		System.out.println("Delete : controller");
+		
+		itemService.delete(id);
+		
 		return "redirect:shoppingmallHome";
 	}
 }

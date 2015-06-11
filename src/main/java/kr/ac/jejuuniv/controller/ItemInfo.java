@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/intfoItem")
+@RequestMapping("/infoItem")
 public class ItemInfo {
 
 	@Autowired
@@ -18,6 +18,7 @@ public class ItemInfo {
 	@RequestMapping
 	public Item getItem(@RequestParam("id") int id) {
 		System.out.println("ItemInfo : controller");
+		
 		return itemService.getItem(id);
 	}
 }

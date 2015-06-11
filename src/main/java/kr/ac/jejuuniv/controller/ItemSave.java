@@ -17,8 +17,10 @@ public class ItemSave {
 	
 	@RequestMapping
 	public String save(@ModelAttribute Item item) {
-		itemService.save(item);
 		System.out.println("ItemSave_ADD : controller");
+		
+		itemService.save(item);
+		
 		return "redirect:shoppingmallHome";
 	}
 
