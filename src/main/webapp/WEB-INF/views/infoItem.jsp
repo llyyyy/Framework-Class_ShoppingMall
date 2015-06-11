@@ -6,7 +6,14 @@
 	<meta charset="UTF-8">
 	<title>상품 정보</title>
 	<style type="text/css">
+		body{width:50%; text-align: center; margin: 0 auto;}
+		#nav {
+			float: left;
+		}
+
 	</style>
+
+	<!-- <link href="/shoppingmall.css" rel="stylesheet" type="text/css" media="all" /> -->
 	<!-- 합쳐지고 최소화된 최신 CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<!-- 부가적인 테마 -->
@@ -20,36 +27,45 @@
 <body>
 	<h1>상품 정보</h1>
 	<form method="post" action="basket.jeju">
-		<fieldset>
-			<div>
-				<a class="btn btn-default" href="shoppingmallHome" role="button">목록</a>
-				<a class="btn btn-default" href="modifyItem?id=${item.id}" role="button">수정</a>
+		<p>
+			<a class="btn btn-default" href="shoppingmallHome" role="button">목록</a>
+			<a class="btn btn-default" href="modifyItem?id=${item.id}" role="button">수정</a>
+		</p>		
+		<div>
+			<input type="hidden" name="id" value="${item.id}" />
+		</div>
+
+		<div class="form-group">
+			<label for="inputEmail3" class="col-sm-2 control-label">상품명</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="itemName" value="${item.itemName}" readonly/>
 			</div>
-			<div>
-				<input type="hidden" name="id" value="${item.id}" />
+		</div>
+		<!-- <img src="" alt="상품이미지" class="img-responsive img-rounded" readonly/> -->
+		<div class="form-group">
+			<label for="inputEmail3" class="col-sm-2 control-label">가격</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="price" value="${item.price}" readonly/>
 			</div>
-			<div>
-				<label>상품명</label>
-				<input class="text" name="itemName" value="${item.itemName}" readonly/>
+		</div>
+		<div class="form-group">
+			<label for="inputEmail3" class="col-sm-2 control-label">판매자</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="provider" value="${item.provider}" readonly/>
 			</div>
-			<div>
-				<!-- <img src="" alt="상품이미지" class="img-responsive img-rounded" readonly/> -->
-				<label>가격</label>
-				<input class="text" name="price" value="${item.price}" readonly/>
+		</div>
+		<div class="form-group">
+			<label for="inputEmail3" class="col-sm-2 control-label">상품상세설명</label>
+			<div class="col-sm-10">
+				<input type="textarea" class="form-control" rows="10" name="itemExplain"  value="${item.itemExplain}" readonly></input>
 			</div>
-			<div>
-				<label>판매자</label>
-				<input class="text" name="provider" value="${item.provider}" readonly/>
-			</div>
-			<div>
-				<label>상품상세설명</label>
-				<input class="text" name="itemExplain" value="${item.itemExplain}" readonly/>
-			</div>
-			<div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
 				<input class="btn btn-default" type="submit" value="구매" />
 				<!-- <a class="btn btn-default" href="basket.jeju" role="button">구매</a> -->
 			</div>
-		</fieldset>
+		</div>
 	</form>
 </body>
 </html>

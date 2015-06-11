@@ -12,6 +12,7 @@
 		.itemImg{width: 50px;}
 		.itemName{width: 300px;}
 	</style>
+	<!-- <link href="/shoppingmall.css" rel="stylesheet" type="text/css" media="all" /> -->
 
 	<!-- 합쳐지고 최소화된 최신 CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">

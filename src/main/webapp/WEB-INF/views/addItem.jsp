@@ -8,6 +8,7 @@
 	<style type="text/css">
 		body{width: 50%; text-align:center; margin: 0 auto;}
 	</style>
+	<!-- <link href="/shoppingmall.css" rel="stylesheet" type="text/css" media="all" /> -->
 	<!-- 합쳐지고 최소화된 최신 CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<!-- 부가적인 테마 -->

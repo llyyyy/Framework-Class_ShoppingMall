@@ -14,7 +14,7 @@
 		td{border: solid 1px; height: 50px; padding: 10px;}
 		
 	</style>
-	
+	<!-- <link href="/resources/css/shoppingmall.css" rel="stylesheet" type="text/css" media="all" /> -->
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
