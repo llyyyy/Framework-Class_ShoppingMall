@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>장바구니</title>
 	<style type="text/css">
-		body{width:70%;text-align: center;}
+		#wrap{width:70%;text-align: center; margin:0 auto; margin-top:10px;}
 		table{margin: 0 auto;}
 		td{border: solid 1px; height: 50px; padding: 10px;}
 		.itemImg{width: 50px;}
@@ -24,6 +24,7 @@
 	 -->
 </head>
 <body>
+<div id="wrap">
 	<div id="header">
 		<p>허윤호 님의 장바구니</p>
 	</div>
@@ -48,6 +49,6 @@
 		</table>
 		<p>총 가격 45,000</p>
 	</div>
-
+</div>
 </body>
 </html>

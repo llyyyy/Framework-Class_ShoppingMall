@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>회원 가입</title>
 	<style type="text/css">
-		body{width: 50%; text-align:center; margin: 0 auto;}
+		#wrap{width: 50%; text-align:center; margin: 0 auto; margin-top:10px;}
 		.form-join{max-width: 500px;padding: 19px 29px 29px;margin: 0 auto 20px;background-color: #fff;border: 1px solid #e5e5e5;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);box-shadow: 0 1px 2px rgba(0,0,0,.05);}
 	</style>
 	<!-- <link href="/shoppingmall.css" rel="stylesheet" type="text/css" media="all" /> -->
@@ -20,7 +20,7 @@
 	 -->
 </head>
 <body>
-
+<div id="wrap">
 	<h1>회원 가입</h1>
 	<form class="form-join form-horizontal" action="./shoppingmallHome" method="get" name="join" >
 		<div class="form-group">
@@ -57,5 +57,6 @@
 			</div>
 		</div>
 	</form>
+</div>
 </body>
 </html>

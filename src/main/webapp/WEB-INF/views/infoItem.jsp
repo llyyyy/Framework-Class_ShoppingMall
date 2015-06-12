@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>상품 정보</title>
 	<style type="text/css">
-		body{width:50%; text-align: center; margin: 0 auto;}
+		#wrap{width:50%; display:block; text-align: center; margin: 0 auto; margin-top:10px;}
 		#nav {
 			float: left;
 		}
@@ -24,6 +24,7 @@
 	 -->
 </head>
 <body>
+<div id="wrap">
 	<h1>상품 정보</h1>
 	<form method="post" action="basket.jeju">
 		<p>
@@ -66,5 +67,6 @@
 			</div>
 		</div>
 	</form>
+</div>
 </body>
 </html>

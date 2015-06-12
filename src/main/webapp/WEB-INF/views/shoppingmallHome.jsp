@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>쇼핑몰 시스템(비로그인)</title>
 	<style type="text/css">
-		body{width:70%; text-align: center; margin: 0 auto;}
+		#wrap{width:70%; display: block; text-align: center; margin: 0 auto; margin-top: 10px;}
 		#header {
 			float left;
 		}
@@ -26,6 +26,7 @@
 	 -->
 </head>
 <body>
+<div id="wrap">
 	<div id="header">
 		<a class="btn btn-default" href="join.jeju" role="button">회원가입</a>
 		<a class="btn btn-default" href="login.jeju" role="button">로그인</a>
@@ -33,7 +34,7 @@
 	</div>
 	<br/><br/>
 	<div id="content">
-		<table class="table table-hover" id="list_item">
+		<table class="table table-hover table-bordered" id="list_item">
 			<caption> 쇼핑몰 </caption>
 			<thread>
 				<tr>
@@ -56,6 +57,7 @@
 		</table>
 		<button type="button" class="btn btn-default" id="page">1</button>
 	</div>
+</div>
 
 </body>
 </html>

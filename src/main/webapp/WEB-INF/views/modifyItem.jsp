@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>상품 수정</title>
 	<style type="text/css">
-		body{width: 50%; text-align:center; margin: 0 auto;}
+		#wrap{width: 50%; text-align:center; margin: 0 auto; margin-top:10px;}
 		.img-responsive {
 			max-width: 100%,
 			height: auto;
@@ -29,6 +29,7 @@
 	 -->
 </head>
 <body>
+<div id="wrap">
 	<h1>상품 수정</h1>
 	<p>(주)제주대학교 님의 상품</p>
 
@@ -75,6 +76,6 @@
 			</div>
 		</fieldset>
 	</form>
-
+</div>
 </body>
 </html>

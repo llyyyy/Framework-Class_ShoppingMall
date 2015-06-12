@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>상품 등록</title>
 	<style type="text/css">
-		body{width: 50%; text-align:center; margin: 0 auto;}
+		#wrap{width: 50%; text-align:center; margin: 0 auto; margin-top:10px;}
 	</style>
 	<!-- <link href="/shoppingmall.css" rel="stylesheet" type="text/css" media="all" /> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -19,6 +19,7 @@
 	 -->
 </head>
 <body>
+<div id="wrap">
 	<h1>상품 등록</h1>
 	<p>(주)제주대학교 님의 상품</p>
 
@@ -62,6 +63,6 @@
 			</div>
 		</div>
 	</form>
-
+</div>
 </body>
 </html>

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>로그인</title>
 	<style type="text/css">
-		body{width:50%; text-align:center;}
+		#wrap{width:50%; text-align:center;margin:0 auto; margin-top:10px;}
 		.form-login{max-width: 500px;padding: 19px 29px 29px;margin: 0 auto 20px;background-color: #fff;border: 1px solid #e5e5e5;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);box-shadow: 0 1px 2px rgba(0,0,0,.05);}
 	</style>
 	<!-- <link href="/shoppingmall.css" rel="stylesheet" type="text/css" media="all" /> -->
@@ -20,6 +20,7 @@
 	 -->
 </head>
 <body>
+<div id="wrap">
 	<h1>로그인</h1>
 	<form class="form-login form-horizontal" action="./home_user" method="get" name="login" >
 		<div class="form-group">
@@ -41,6 +42,6 @@
 			</div>
 		</div>
 	</form>
-
+</div>
 </body>
 </html>

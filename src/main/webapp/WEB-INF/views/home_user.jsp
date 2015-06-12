@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title>쇼핑몰 시스템(로그인)</title>
 	<style type="text/css">
-		body{text-align: center;}
+		#wrap{text-align: center;}
 		table{margin: 0 auto;}
 		td{border: solid 1px; height: 50px; padding: 10px;}
 	</style>
@@ -21,6 +21,7 @@
 	 -->
 </head>
 <body>
+<div id="wrap">
 	<div id="header">
 		<p>허윤호님 안녕하세요</p>
 		<a class="btn btn-default" href="./addItem" role="button">상품등록</a>
@@ -45,6 +46,6 @@
 		<button type="button" class="btn btn-default" id="page">1</button>
 	</div>
 
-
+</div>
 </body>
 </html>
